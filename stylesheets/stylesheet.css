@@ -2,7 +2,7 @@
 /* css rest */
 html, body, div, span, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,abbr, address, cite, code,del, dfn, em, img, ins, kbd, q, samp,small, strong, sub, sup, var,b, i, dl, dt, dd, ol, ul, li,fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, figcaption, figure,footer, header, menu, nav, section, summary,time, mark, audio, video{margin:0;padding:0;border:0;}
-body{padding:0;margin:0;background:#0079c1;color:#fff;font-family:'Nanum Gothic','¸¼Àº °íµñ','Sans-serif', Dotum, Gulim, Arial, Helvetica, Verdana;font-size:12px;line-height:normal;}
+body{padding:0;margin:0;background:#0079c1;color:#fff;font-family:'Nanum Gothic','¸¼Àº °íµñ','Sans-serif', Dotum, Gulim, Arial, Helvetica, Verdana;font-size:13px;line-height:normal;}
 h1, h2, h3, h4, h5, h6{font-size:100%;color:#fff;font-weight:normal;font-family:'Nanum Gothic','¸¼Àº °íµñ','Sans-serif', Dotum, Gulim, Arial, Helvetica, Verdana;}
 ul, ol{list-style:none;}
 em, address{font-style:normal;}
@@ -81,7 +81,9 @@ a {
   zoom:1;
 }
 
-input[type=text] {background-color:#f1f1f1;color:#cccccc;font-size:18px;line-height:32px;text-indent:3%;border:1px solid #dcdcdc;border-radius:50px;}
+input[type=text],
+input[type=number] {background-color:#f1f1f1;color:#3c5165;font-size:14px;line-height:32px;text-indent:3%;border:1px solid #ced9e4;border-radius:50px;}
+input[type=number]:focus,
 input[type=text]:focus {border-color:#015fa5;background-color:#FFF;}
 
 /* hash tags */
@@ -96,5 +98,26 @@ input[type=text]:focus {border-color:#015fa5;background-color:#FFF;}
 .del-tag {font-family:'Helvetica';}
 .tag-count {color:#ddd;font-size:12px;display:inline-block;}
 .my-hash-network {}
-.my-hash-network .hash-search-list li {display:inline-block;background-color:#cdd4da;color:#666;padding:2px;margin:1px 0;}
+.my-hash-network .hash-search-list li {display:inline-block;background-color:#cdd4da;color:#666;padding:2px;margin:1px 3px 1px 0;border-radius:7px}
 .hash-button {text-align:center;}
+
+.hash-tab-wrap {width:100%;overflow:hidden;background-color:#00837d;}
+.hash-tab-wrap a {display:block;width:50%;float:left;text-align:center;padding:10px 0;line-height:15px;font-size:13px;color:#f4f4f4;font-weight:bold;}
+.hash-tab-wrap a.current {background-color:#005653;}
+
+.my-info {overflow:hidden;}
+.my-info dt {display:inline-block;float:left;width:30%;}
+.my-info dd {display:inline-block;float:left;width:70%;}
+
+.hash-layer-wrap {background-color:#FFF;border-radius:5px;border:1px solid #717171;position:absolute;padding:2% 0;width:auto;margin-top:-3%;}
+.layer-menu {color:#3c5165;font-size:13px;font-weight:normal;}
+.layer-menu li {border-top:1px solid #ced9e4;padding:2% 2% 2% 4%;text-align:left;word-break:keep-all;white-space:nowrap;}
+.layer-menu li:first-child {border-top-width:0;}
+
+.hash-polis-wrap {overflow:hidden;}
+.polis-other,
+.polis-my {clear:both;margin-bottom:3px;}
+.polis-boom {border:1px solid #dcdcdc;border-radius:10px;width:auto;display:inline-block;padding:10px;}
+.hash-label {color:#444;}
+.hash-label:before {content:'#';color:#444;font-size:15px;}
+.polis-my .polis-boom {float:right;}

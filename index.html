@@ -5,13 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi" />
 
 <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-<link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-<link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
 <title>Hashtags by Team 자꾸아파 중년이다</title>
 </head>
 
 <body>
+
+<div class="hash-tab-wrap">
+	<a href="#" class="tab-a current"><span>나의 정보</span></a><!-- current 활성화 클래스 -->
+	<a href="#" class="tab-b"><span>해시 폴리스</span></a>
+</div>
 
 <h1 class="hash-head">
 	<code>#</code> 해시태그 등록
@@ -20,7 +23,7 @@
 <div class="hash-container">
 
 	<div class="hash-search-wrap">
-		<span class="code">#</span><input type="text" name="" id="" />
+		<span class="code">#</span><input type="text" name="" id="" placeholder="해시 태그를 넣으세요." />
 		<a href="#" class="btn">검색</a>
 	</div>
 
@@ -38,19 +41,56 @@
 		<h2>나의 해시 태그</h2>
 		<div class="hash-search-list">
 			<ul>
-				<li>야구 <a href="#" class="del-tag"><em>X</em></a></li>
-				<li>야구 <a href="#" class="del-tag"><em>X</em></a></li>
-				<li>야구 <a href="#" class="del-tag"><em>X</em></a></li>
-				<li>야구 <a href="#" class="del-tag"><em>X</em></a></li>
-				<li>야구 <a href="#" class="del-tag"><em>X</em></a></li>
+				<li>오지 여행 <a href="#" class="del-tag"><em>X</em></a></li>
+				<li>아마추어 야구 동호회 <a href="#" class="del-tag"><em>X</em></a></li>
+				<li>NodeJS <a href="#" class="del-tag"><em>X</em></a></li>
+				<li>Gulp <a href="#" class="del-tag"><em>X</em></a></li>
+				<li>깃허브 <a href="#" class="del-tag"><em>X</em></a></li>
 			</ul>
 		</div>
 
 	</div>
 
-	<div class="hash-button">
-		<a href="#" class="btn">등록완료</a>
+	<div class="my-info-wrap">
+		<dl class="my-info">
+			<dt>나의 G코인</dt>
+			<dd>
+				30,000 G
+			</dd>
+		</dl>
+		<div class="">
+			<input type="text" name="" id="" placeholder="보낼 G를 넣으세요." />
+			<a href="#" class="btn small">보내기</a>
+		</div>
+
+		<!-- 찾기 -->			
+		<div class="hash-search-wrap">
+			<input type="text" name="" id="" placeholder="받는 사람" />
+			<a href="#" class="btn">검색</a>
+		</div>
+
+		<div class="">
+			<input type="text" name="" id="" placeholder="기부할 G를 넣으세요." />
+			<a href="#" class="btn small">기부하기</a>
+		</div>
 	</div>
+
+
+	<!-- 레이어 -->
+	<div class="hash-layer-wrap" style="display:none;">
+		<div class="hash-layer-contents">
+			<div class="hash-layer-head">
+				
+			</div>
+			<div class="hash-layer-body">
+				<ul class="layer-menu">
+					<li>G코인 보내기</li>
+					<li>G코인 기부하기</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
 
 </div>
 
