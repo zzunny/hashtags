@@ -158,7 +158,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .my-comment {clear:right;text-align:right;border-top:2px solid #888;margin-top:5px;padding-top:5px;}
 .search-keyword-wrap {clear:both;padding:10px 0;}
 .point-select {color:#6a91b1;}
-.point-select select {width:50px;height:30px;}
+.point-select select {height:30px;}
 
 .my-hash-tag {overflow:hidden;background-color:#323232;padding:5px 0;margin:-5px -10px 10px;}
 .my-hash-tag .code {color:#fff;vertical-align:-1px;padding:0 0 0 5px;}
