@@ -1,189 +1,26 @@
-body {
-  margin: 0;
-  padding: 0;
-  background: #151515 url("../images/bkg.png") 0 0;
-  color: #eaeaea;
-  font: 16px;
-  line-height: 1.5;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-}
+@charset "utf-8";
+/* css rest */
+html, body, div, span, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,abbr, address, cite, code,del, dfn, em, img, ins, kbd, q, samp,small, strong, sub, sup, var,b, i, dl, dt, dd, ol, ul, li,fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, figcaption, figure,footer, header, menu, nav, section, summary,time, mark, audio, video{margin:0;padding:0;border:0;}
+body{padding:0;margin:0;background:#0079c1;color:#fff;font-family:'Nanum Gothic','¸¼Àº °íµñ','Sans-serif', Dotum, Gulim, Arial, Helvetica, Verdana;font-size:12px;line-height:normal;}
+h1, h2, h3, h4, h5, h6{font-size:100%;color:#fff;font-weight:normal;font-family:'Nanum Gothic','¸¼Àº °íµñ','Sans-serif', Dotum, Gulim, Arial, Helvetica, Verdana;}
+ul, ol{list-style:none;}
+em, address{font-style:normal;}
+hr{display:none;}
+img{border:0 none;}
+
+a, a:hover, a:focus, a:active{color:#333;cursor:pointer;text-decoration:none;}
+a:focus{outline:thin dotted #666;}
+a:active, a:hover, input {outline:none;text-decoration:none;}
+
+fieldset, fieldset a>img,fieldset label,fieldset select,fieldset input,table td a>img,table td label,table td select,table td input,input[type="checkbox"],input[type="radio"]{vertical-align:middle;}
+form, fieldset, legend, label, input[type="image"], input[type="radio"], input[type="checkbox"]{border:0 none;}
+fieldset{border:0 none;}
+legend, caption{position:absolute;visibility:hidden;overflow:hidden;width:0;height:0;margin:0;padding:0;font-size:0;line-height:0;}
+button, input, select, textarea, .input-info-label{font-family:'Nanum Gothic','¸¼Àº °íµñ','Sans-serif', Dotum, Gulim, Arial, Helvetica, Verdana;font-size:1em;line-height:normal;}
 
 /* General & 'Reset' Stuff */
 
-.container {
-  width: 90%;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-section {
-  display: block;
-  margin: 0 0 20px 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 20px;
-}
-
-li {
-  line-height: 1.4 ;
-}
-
-/* Header, <header>
-   header   - container
-   h1       - project name
-   h2       - project description
-*/
-
-header {
-  background: rgba(0, 0, 0, 0.1);
-  width: 100%;
-  border-bottom: 1px dashed #b5e853;
-  padding: 20px 0;
-  margin: 0 0 40px 0;
-}
-
-header h1 {
-  font-size: 30px;
-  line-height: 1.5;
-  margin: 0 0 0 -40px;
-  font-weight: bold;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: #b5e853;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-               0 0 5px rgba(181, 232, 83, 0.1),
-               0 0 10px rgba(181, 232, 83, 0.1);
-  letter-spacing: -1px;
-  -webkit-font-smoothing: antialiased;
-}
-
-header h1:before {
-  content: "./ ";
-  font-size: 24px;
-}
-
-header h2 {
-  font-size: 18px;
-  font-weight: 300;
-  color: #666;
-}
-
-#downloads .btn {
-  display: inline-block;
-  text-align: center;
-  margin: 0;
-}
-
-/* Main Content
-*/
-
-#main_content {
-  width: 100%;
-  -webkit-font-smoothing: antialiased;
-}
-section img {
-  max-width: 100%
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: #b5e853;
-  letter-spacing: -0.03em;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-               0 0 5px rgba(181, 232, 83, 0.1),
-               0 0 10px rgba(181, 232, 83, 0.1);
-}
-
-#main_content h1 {
-  font-size: 30px;
-}
-
-#main_content h2 {
-  font-size: 24px;
-}
-
-#main_content h3 {
-  font-size: 18px;
-}
-
-#main_content h4 {
-  font-size: 14px;
-}
-
-#main_content h5 {
-  font-size: 12px;
-  text-transform: uppercase;
-  margin: 0 0 5px 0;
-}
-
-#main_content h6 {
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #999;
-  margin: 0 0 5px 0;
-}
-
-dt {
-  font-style: italic;
-  font-weight: bold;
-}
-
-ul li {
-  list-style: none;
-}
-
-ul li:before {
-  content: ">>";
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  font-size: 13px;
-  color: #b5e853;
-  margin-left: -37px;
-  margin-right: 21px;
-  line-height: 16px;
-}
-
-blockquote {
-  color: #aaa;
-  padding-left: 10px;
-  border-left: 1px dotted #666;
-}
-
-pre {
-  background: rgba(0, 0, 0, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  padding: 10px;
-  font-size: 14px;
-  color: #b5e853;
-  border-radius: 2px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  text-wrap: normal;
-  overflow: auto;
-  overflow-y: hidden;
-}
-
-table {
-  width: 100%;
-  margin: 0 0 20px 0;
-}
-
-th {
-  text-align: left;
-  border-bottom: 1px dashed #b5e853;
-  padding: 5px 10px;
-}
-
-td {
-  padding: 5px 10px;
-}
-
-hr {
-  height: 0;
-  border: 0;
-  border-bottom: 1px dashed #b5e853;
-  color: #b5e853;
-}
 
 /* Buttons
 */
@@ -193,9 +30,7 @@ hr {
   background: -webkit-linear-gradient(top, rgba(40, 40, 40, 0.3), rgba(35, 35, 35, 0.3) 50%, rgba(10, 10, 10, 0.3) 50%, rgba(0, 0, 0, 0.3));
   padding: 8px 18px;
   border-radius: 50px;
-  border: 2px solid rgba(0, 0, 0, 0.7);
-  border-bottom: 2px solid rgba(0, 0, 0, 0.7);
-  border-top: 2px solid rgba(0, 0, 0, 1);
+  border: 2px solid rgba(4, 90, 113, 0.7);
   color: rgba(255, 255, 255, 0.8);
   font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
@@ -245,3 +80,21 @@ a {
 .cf {
   zoom:1;
 }
+
+input[type=text] {background-color:#f1f1f1;color:#cccccc;font-size:18px;line-height:32px;text-indent:3%;border:1px solid #dcdcdc;border-radius:50px;}
+input[type=text]:focus {border-color:#015fa5;background-color:#FFF;}
+
+/* hash tags */
+.hash-head {color:#fff;font-size:15px;font-weight:bold;padding:10px;}
+
+.code {color:#fff;font-size:18px;font-weight:bold;margin-right:5px;}
+.hash-container {padding:10px;}
+
+.hash-search-list {color:#fff;opacity:0.8;padding:10px 0;}
+.hash-search-list li {font-size:15px;color:#fff;}
+.hash-search-list li:before {content:'#';color:#fff;font-size:15px;}
+.del-tag {font-family:'Helvetica';}
+.tag-count {color:#ddd;font-size:12px;display:inline-block;}
+.my-hash-network {}
+.my-hash-network .hash-search-list li {display:inline-block;background-color:#cdd4da;color:#666;padding:2px;margin:1px 0;}
+.hash-button {text-align:center;}
