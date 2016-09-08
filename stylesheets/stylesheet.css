@@ -98,7 +98,9 @@ input[type=text]:focus {border-color:#015fa5;background-color:#f5f5f5;}
 
 .hash-search-list {color:#fff;opacity:0.8;padding:10px 0;}
 .hash-search-list li {font-size:15px;color:#fff;}
-.hash-search-list.my-hash {margin:-15px -10px 0;}
+.my-hash-member,
+.hash-search-list.my-hash {margin:-14px -10px 0;}
+.my-hash-member li,
 .hash-search-list.my-hash li {background: rgba(255,255,255,1);
 background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%);
 background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(51%, rgba(237,237,237,1)), color-stop(100%, rgba(255,255,255,1)));
@@ -112,11 +114,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .search-keyword:before,
 .hash-search-list li:before {content:'#';color:#fff;font-size:15px;}
 .del-tag {font-family:'Helvetica';display:inline-block;padding:0 3px;}
+.hash-number,
 .tag-count {color:#9299ac;font-size:12px;display:inline-block;background-color:#FFF;border-radius:15px;min-width:10px;height:15px;text-align:center;font-weight:bold;padding:0 5px;line-height:15px;}
 .my-hash-network {}
 .search-keyword,
 .my-hash-network .hash-search-list li {display:inline-block;background-color:#9299ac;color:#fff;padding:2px 4px;margin:1px 3px 1px 0;border-radius:15px;line-height:15px;}
 .hash-button {text-align:center;}
+
+.my-hash-member li {padding-left:15px;}
+.department {display:inline-block;min-width:120px;}
+.department:before {content:'';background:url('../images/ico_member.png') no-repeat 0% 50%;display:inline-block;width:15px;height:15px;background-size:15px auto;vertical-align:middle;margin-right:5px;} 
+.name {display:inline-block}
+.my-hash-member .hash-number {background-color:#ff5426;color:#fff;margin-left:5px;}
 
 .hash-tab-wrap {width:100%;overflow:hidden;background-color:#6389a8;position:fixed;top:0;left:0;right:0;padding:5px 0;}
 .hash-tab-wrap a {display:block;width:29%;float:left;text-align:center;height:30px;line-height:30px;font-size:13px;color:#d4e3ef;font-weight:normal;margin:0 1.5%;}
